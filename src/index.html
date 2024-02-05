@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIAWU🧡</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-tag-cloud.min.js"></script>
+</head>
+
+<body>
+    <canvas class="webgl"></canvas>
+
+    <!-- <section class="section personal_info">
+        <div id="wordcloud-wrapper">
+            <section class="wordcloud"></section>
+            <div class="input-section">
+                <input type="text" id="word-input">
+                <button onclick="addWord()" id="add-btn">add word</button>
+            </div>
+        </div>
+    </section> -->
+    <section class="section welcome_wrapper">
+        <div class="welcome">
+            <h1>Hello, <span class="autotype"></span></h1>
+            <p>I am <span style="text-shadow: 1px 1px 2px rgba(254, 254, 254, 0.8); color: #219ebc;">Xia Wu</span>,
+                <span style="text-shadow: 1px 1px 2px rgba(254, 254, 254, 0.8); color: #219ebc;">a master student</span>
+                in
+                Applied
+                Data Science at Utrecht University, fascinated by
+                AI, web data harvesting and cloud computing.<br><br>I am on the
+                path to pursuing a career as
+                a skilled <span style="text-shadow: 1px 1px 2px rgba(254, 254, 254, 0.8); color: #219ebc;">data
+                    engineer</span>. Reach
+                out if you're scouting for someone like me!
+            </p>
+
+            <div class="welcome_link"><a href="#contact_wrapper">Let's chat<i class="bi bi-arrow-down-short"></i></a>
+            </div>
+        </div>
+
+        <div id="wordcloud-wrapper">
+            <section class="wordcloud"></section>
+            <div class="input-section">
+                <input type="text" id="word-input">
+                <button onclick="addWord()" id="add-btn">add word</button>
+            </div>
+        </div>
+    </section>
+    <section class="section project_wrapper">
+        <h2>My projects</h2>
+        <div class="content content_1">
+            <span class="title">
+                <a href="https://xiawu.notion.site/Azure-in-Action-Integrating-ETL-and-Analytics-for-Olympic-Data-Analytics-d2100cda9d0544a292ccafb2cdc46aac?pvs=4"
+                    target="_blank">Azure
+                    in Action</a>
+            </span>
+            <span class="subtitle">A hands-on project to gain a practical experience in ETL and analytics by utilizing
+                diverse services on Azure.</span>
+            <span class="content_img"> <a
+                    href="https://xiawu.notion.site/Azure-in-Action-Integrating-ETL-and-Analytics-for-Olympic-Data-Analytics-d2100cda9d0544a292ccafb2cdc46aac?pvs=4"
+                    target="_blank">
+                    <img src="images/workflowAzure.png" alt="workflowAzure" class="img tilt">
+                </a></span>
+
+        </div>
+        <div class="content content_2">
+            <span class="title">
+                <a href="https://zhengxiaoping.com/" target="_blank">Personal Portfolio Website</a>
+            </span>
+            <span class="subtitle">Welcome to my first website creation! Oh, by the way, meet my husband – a PHD
+                student, researching on the intersection of human movement sciences, AI, and wearable sensors! Fancy
+                seeing more of his research? Just click and hop over to his homepage!</span>
+            <span class="content_img"><a href="https://zhengxiaoping.com/" target="_blank">
+                    <img src="images/profile2.png" alt="profile" class="img tilt">
+                </a></span>
+
+        </div>
+        <div class="content content_4">
+            <span class="title">
+                <a href="https://colab.research.google.com/drive/14gqW2ZqQeHv7u43pZwT_QcOAHhcoWKCM?usp=sharing"
+                    target="_blank">YouTube
+                    Comments Analysis</a>
+            </span>
+            <span class="subtitle">This article is to analyze netizen's attitude towards to Trump and Biden according to
+                their comments in YouTube videos. The content includes exploratory data analysis, text data cleaning,
+                topic modeling and sentiment
+                analysis.</span>
+            <span class="content_img"><a
+                    href="https://colab.research.google.com/drive/14gqW2ZqQeHv7u43pZwT_QcOAHhcoWKCM?usp=sharing"
+                    target="_blank">
+                    <img src="images/eda.png" alt="webProject" class="img tilt">
+                    <!-- <img src="images/webProject1.png" alt="webProject" class="img1 tilt"> -->
+                </a></span>
+        </div>
+        <div class="content content_5">
+            <span class="title">
+                <a href="https://xiawu.notion.site/Web-Scraping-with-Python-b8c65da0f34e4872a1d929cab592869f?pvs=4"
+                    target="_blank">Web Scraping with Python</a>
+            </span>
+            <span class="subtitle">A web scraping project built entirely from scratch. Core contents include: web
+                scraping with beautiful soup, automated email notifications in python and cron jobs on macOS.</span>
+            <span class="content_img"><a
+                    href="https://xiawu.notion.site/Web-Scraping-with-Python-b8c65da0f34e4872a1d929cab592869f?pvs=4"
+                    target="_blank">
+                    <img src="images/scraping.png" alt="webProject" class="img tilt">
+                    <!-- <img src="images/webProject1.png" alt="webProject" class="img1 tilt"> -->
+                </a></span>
+        </div>
+        <div class="content content_3">
+            <span class="title">
+                <a href="./">My
+                    Portfolio Website</a>
+            </span>
+            <span class="subtitle">Highly like interactive website design! So explored the world of threejs this time
+                and made this satisfactory work for myself :)</span>
+            <span class="content_img"><a href="./" target="_blank">
+                    <img src="images/webProject.png" alt="webProject" class="img tilt">
+                    <!-- <img src="images/webProject1.png" alt="webProject" class="img1 tilt"> -->
+                </a></span>
+        </div>
+
+    </section>
+    <section class="section" id="contact_wrapper">
+        <h2>Contact me</h2>
+        <div class="card tilt">
+            <div class="card-image-wrapper">
+                <img src="images/profile0.png" alt="profile" id="profile0">
+                <img src="images/profile1.png" alt="profile" id="profile1">
+            </div>
+            <div class="card-content">
+                <p>I'm in pursuit of a role where I can thrive. Got an eye for talent? I'm just a message away!</p>
+                <h3>EMAIL</h3>
+                <button id="copy-btn">wu.xia93@outlook.com</button>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/xia-wu93/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="bi bi-person-bounding-box"></i>
+                    </a>
+                    <a href="#contact_wrapper">
+                        <i class="bi bi-chat-right-dots-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        ©2024 XIA WU
+    </footer>
+
+
+    <!-- Load library -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript" src="javascript/vanilla-tilt.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jasondavies/d3-cloud/build/d3.layout.cloud.js"></script>
+    <script src="javascript/add_wordcloud.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        // type word effect
+        var typed = new Typed('.autotype', {
+            strings: ['world!', 'everyone!'],
+            typeSpeed: 50,
+            backSpeed: 150,
+            loop: true
+        });
+
+        // tilt picture effect
+        VanillaTilt.init(document.querySelectorAll(".tilt"), {
+            max: 25,
+            speed: 400
+        });
+
+
+        document.getElementById('copy-btn').addEventListener('click', function () {
+            // Get the text from the button itself
+            const buttonText = this.innerText;
+
+            // Use the Clipboard API to copy the text
+            navigator.clipboard.writeText(buttonText).then(() => {
+                // Optional: Display a message that the text was copied
+                alert('Copied!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    </script>
+
+
+
+
+
+    <script type="module" src="./script.js"></script>
+
+
+</body>
+
+</html>
